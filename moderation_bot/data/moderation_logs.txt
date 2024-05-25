@@ -1,0 +1,9 @@
+# moderation_logs.txt
+
+import datetime
+
+def log_moderation_action(action, user_id, reason):
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open("moderation_logs.txt", "a") as file:
+        log_entry = f"{timestamp} - {action}: User ID {user_id} - Reason: {reason}\n"
+        file.write(log_entry)
