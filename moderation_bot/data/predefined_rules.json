@@ -1,0 +1,31 @@
+{
+  "rules": {
+    "automated_actions": {
+      "mute": {
+        "enabled": true,
+        "threshold": 3,
+        "duration_minutes": 30
+      },
+      "kick": {
+        "enabled": true,
+        "threshold": 5
+      },
+      "ban": {
+        "enabled": true,
+        "threshold": 10
+      }
+    },
+    "custom_commands": {
+      "command1": "action1",
+      "command2": "action2",
+      "command3": "action3"
+    },
+    "role_management": {
+      "role1": ["permission1", "permission2"],
+      "role2": ["permission3", "permission4"]
+    },
+    "chat_monitoring": {
+      "flagged_words": ["word1", "word2", "word3"]
+    }
+  }
+}
